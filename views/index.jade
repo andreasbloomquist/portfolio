@@ -1,15 +1,23 @@
 extends layout
 
 block content
-  #top-container 
+  #top-container
     include ./nav.jade
-          h1 Andreas Bloomquist
-          h2 Full Stack Developer
+      h1 Andreas Bloomquist
+      h2 Full Stack Developer
 
-  #social-links
-    ul.small-block-grid-3
-      li
-        img(src="images/gh_logo.png")
-          a(href="https://www.linkedin.com/in/andreasbloomquist")
+      .row
+        #social-links.large-2.large-offset-10.columns
+          ul.small-block-grid-3
+            li
+              a(href="https://github.com/andreasbloomquist")
+                img(src="images/gh_logo.png", id="gh")
+            li
+              a(href="https://www.linkedin.com/in/andreasbloomquist")
+                img(src="images/li_logo.png", id='li')
+            li
+              a(href="https://twitter.com/andrebloom")
+                img(src="images/twt_logo.png")
+
   script
     $(document).foundation();

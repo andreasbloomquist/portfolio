@@ -23,7 +23,7 @@ h2{
 }
 .left-off-canvas-menu{
 	bottom: -45rem;
-	background-color: rgba(184,181,186,.7)
+	background-color: rgba(175,175,175,.8)
 }
 .tab-bar{
 	background-color: rgba(0,0,0,0);
@@ -40,7 +40,8 @@ ul.off-canvas-list li a{
 	width: 2rem;
 }
 div#social-links {
-  position: absolute;
-  top: 90%;
-  left: 90%;
+  margin-top: 40%;
+}
+ul.off-canvas-list{
+	 margin-top: 3rem;
 }
