@@ -1,5 +1,15 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  #top-container 
+    include ./nav.jade
+          h1 Andreas Bloomquist
+          h2 Full Stack Developer
+
+  #social-links
+    ul.small-block-grid-3
+      li
+        img(src="images/gh_logo.png")
+          a(href="https://www.linkedin.com/in/andreasbloomquist")
+  script
+    $(document).foundation();
