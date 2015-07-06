@@ -13,6 +13,16 @@ h1{
 h2{
 	font-family: $main-font;
 }
+i{
+	font-size: 2rem;
+	color: black;
+	&:hover{
+		color: grey;
+	}
+}
+li, p{
+	font-family: $secondary-font;
+}
 #top-container{
 	background-image: url('images/bay_bridge.jpg');
 	background-size: cover;
@@ -20,6 +30,9 @@ h2{
 	height: 40rem;
 	position: absolute;
 	background-position-y: 40%;
+}
+#bottom-container{
+	margin-top: 28vw;
 }
 .left-off-canvas-menu{
 	bottom: -45rem;
@@ -35,13 +48,17 @@ ul.off-canvas-list li a{
 	border: none;
 }
 .tab-bar .menu-icon span::after {
-	box-shadow: 0 0 0 2px #FFFFFF, 0 9px 0 2px #FFFFFF, 0 18px 0 2px #FFFFFF;
+	box-shadow: 0 0 0 2px black, 0 9px 0 2px black, 0 18px 0 2px black;
 	margin-top: 0.5rem;
 	width: 2rem;
-}
-div#social-links {
-  margin-top: 40%;
-}
+	}
 ul.off-canvas-list{
 	 margin-top: 3rem;
+}
+img{
+	height: 10vh;
+}
+.social{
+	display: inline;
+	padding: 1.5vw;
 }
