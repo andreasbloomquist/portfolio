@@ -62,3 +62,23 @@ img{
 	display: inline;
 	padding: 1.5vw;
 }
+
+.skills{
+	text-align: center;
+}
+#left-container, #center-container, #right-container {
+	border: 1px solid black;
+	border-radius: 50rem;
+	height: 20rem;
+	width: 20rem;
+	h2 {
+		padding-top: 5vh;
+	}
+}
+
+// Media queries
+@media (max-width: 900px){
+	h1#title{
+		font-size: 5rem;
+	}
+}

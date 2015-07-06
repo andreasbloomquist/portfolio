@@ -6338,3 +6338,18 @@ img {
 .social {
   display: inline;
   padding: 1.5vw; }
+
+.skills {
+  text-align: center; }
+
+#left-container, #center-container, #right-container {
+  border: 1px solid black;
+  border-radius: 50rem;
+  height: 20rem;
+  width: 20rem; }
+  #left-container h2, #center-container h2, #right-container h2 {
+    padding-top: 5vh; }
+
+@media (max-width: 900px) {
+  h1#title {
+    font-size: 5rem; } }
