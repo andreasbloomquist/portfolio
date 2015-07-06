@@ -6339,6 +6339,9 @@ img {
   display: inline;
   padding: 1.5vw; }
 
+#skills {
+  margin-top: 10vh; }
+
 .skills {
   text-align: center; }
 
@@ -6349,6 +6352,9 @@ img {
   width: 20rem; }
   #left-container h2, #center-container h2, #right-container h2 {
     padding-top: 5vh; }
+
+div.skills-icons h2.skills {
+  padding-top: 7vh; }
 
 @media (max-width: 900px) {
   h1#title {
