@@ -6332,7 +6332,7 @@ ul.off-canvas-list li a {
 ul.off-canvas-list {
   margin-top: 3rem; }
 
-img {
+#arrow img {
   height: 10vh; }
 
 .social {
@@ -6344,6 +6344,10 @@ img {
 
 .skills {
   text-align: center; }
+  .skills img {
+    margin: 0 auto;
+    padding: 1rem;
+    height: 5rem; }
 
 #left-container, #center-container, #right-container {
   border: 1px solid black;
@@ -6355,6 +6359,28 @@ img {
 
 div.skills-icons h2.skills {
   padding-top: 7vh; }
+
+#projects {
+  height: 100%;
+  background-color: grey; }
+  #projects h2 {
+    padding-top: 5rem;
+    text-align: center; }
+  #projects p {
+    text-align: center; }
+  #projects #examples {
+    margin-top: 3rem; }
+  #projects .projects {
+    margin-bottom: 1rem; }
+
+#about {
+  height: 100%;
+  background-color: #0A0A0A;
+  padding-top: 5rem; }
+  #about img {
+    display: block;
+    height: 80vh;
+    margin: 0 auto; }
 
 @media (max-width: 900px) {
   h1#title {

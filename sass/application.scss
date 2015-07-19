@@ -55,8 +55,10 @@ ul.off-canvas-list li a{
 ul.off-canvas-list{
 	 margin-top: 3rem;
 }
-img{
-	height: 10vh;
+#arrow{
+	img{
+		height: 10vh;
+	}
 }
 .social{
 	display: inline;
@@ -64,9 +66,15 @@ img{
 }
 #skills{
 	margin-top: 10vh;
+	height: 100%
 }
 .skills{
 	text-align: center;
+	img {
+		margin: 0 auto;
+		padding: 1rem;
+		height: 5rem;
+	}
 }
 #left-container, #center-container, #right-container {
 	border: 1px solid black;
@@ -82,6 +90,36 @@ div.skills-icons{
 		padding-top: 7vh;
 	}
 }
+#projects{
+	height: 100%;
+	background-color: grey;
+	h2 {
+		padding-top: 5rem;
+		text-align: center;
+	}
+	p{
+		text-align: center;
+	}
+	#examples{
+		margin-top: 3rem;
+	}
+	.projects{
+		margin-bottom: 1rem;
+	}
+}
+
+#about{
+	height: 100%;
+	background-color: #0A0A0A;
+	padding-top: 5rem;
+	img{
+		display: block;
+		height: 80vh;
+		margin: 0 auto;
+	}
+
+}
+
 // Media queries
 @media (max-width: 900px){
 	h1#title{

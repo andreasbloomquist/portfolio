@@ -35,24 +35,44 @@ block content
         p Besides coding, my other passions including music and traveling.
 
       #skill-icons.row
-        .large-12.large-12.columns.skills-icons
+        .large-12.columns.skills-icons
           h2.skills A few of my skills
-          ul.small-block-grid-6
-            li
+          #iconCarousel.row
+            .skills
               img.mongo(src="images/mongodb-logo.jpeg", alt="MongoDB")
-            li
-              img.angular(src="images/angularjs.png", alt="AngularJS Frontend Framework")
-            li
-              img.node(src="images/ng_logo.png")
-            li
+            .skills
               img.express(src="images/express_logo.png")
-            li
+            .skills
+              img.angular(src="images/angularjs.png", alt="AngularJS Frontend Framework")
+            .skills
+              img.node(src="images/ng_logo.png")
+            .skills              
               img.ruby(src="images/ruby.png")
+            .skills
+              img.ps(src="images/postgresql-logo.png")
+            .skills
+              img.github(src="images/Github_Logo.png")
+            .skills
+              img.js(src="images/js-logo.png")
+            .skills
+              img.html(src="images/HTML5_Logo.svg")
+            .skills
+              img.css(src="images/css3.svg")
+    #projects
+      .medium-6.medium-centered.columns
+        h2 A few of the projects I've built
+        p Check out some examples of projects I've built over the last few months. I chose to highlight these projects as they show off the breadth of my technical skills, while also examplifying products that solve an actual problem.
+      #examples
+        .large-4.columns.projects.projectOne
+          img.genreme(src="images/genreme.png")
+        .large-4.columns.projects.projectTwo
+          img.petid(src="images/petid.png")
+        .large-4.columns.projects.projectThree
+          img.textjames(src="images/textjames.png")
+
+    #about
+      img.andreas(src="images/andreas.jpg")
 
 
 
 
-
-
-  script
-    $(document).foundation();
