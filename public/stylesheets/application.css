@@ -6304,7 +6304,7 @@ ul.off-canvas-list li a {
 ul.off-canvas-list {
   margin-top: 3rem; }
 
-img {
+#arrow img {
   height: 10vh; }
 
 .social {
@@ -6312,25 +6312,66 @@ img {
   padding: 1.5vw; }
 
 #skills {
-  margin-top: 10vh; }
+  margin-top: 10vh;
+  height: 100%; }
+  #skills h2 {
+    padding-bottom: 5vh; }
+
+div#iconCarousel {
+  margin-top: 15vh; }
 
 .skills {
   text-align: center; }
   .skills img {
     margin: 0 auto;
     padding: 1rem;
-    height: 4rem; }
+    height: 5rem; }
+
+#left-container, #center-container {
+  margin-right: 4rem; }
 
 #left-container, #center-container, #right-container {
   border: 1px solid black;
   border-radius: 50rem;
-  height: 20rem;
-  width: 20rem; }
+  height: 18rem;
+  width: 18rem; }
   #left-container h2, #center-container h2, #right-container h2 {
-    padding-top: 5vh; }
+    padding-top: 8vh;
+    font-size: 1.25rem; }
+  #left-container p, #center-container p, #right-container p {
+    font-size: 0.75rem; }
 
 div.skills-icons h2.skills {
   padding-top: 7vh; }
+
+#projects {
+  height: 100%;
+  background-color: grey; }
+  #projects h2 {
+    padding-top: 5rem;
+    text-align: center; }
+  #projects p {
+    text-align: center; }
+  #projects #examples {
+    margin-top: 3rem; }
+  #projects .projects {
+    margin-bottom: 1rem; }
+
+#about {
+  height: 100%;
+  background-color: #0A0A0A;
+  padding-top: 5rem; }
+  #about img {
+    display: block;
+    height: 80vh;
+    margin: 0 auto; }
+
+.slick-prev:before, .slick-next:before {
+  color: black;
+  font-size: 2rem; }
+  .slick-prev:before:hover, .slick-prev:before:focus, .slick-next:before:hover, .slick-next:before:focus {
+    outline: none;
+    background: none; }
 
 @media (max-width: 900px) {
   h1#title {

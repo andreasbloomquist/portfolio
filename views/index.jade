@@ -1,8 +1,9 @@
 extends layout
 
 block content
+  include ./nav.jade
   #top-container
-    include ./nav.jade
+    .row
       h1#title Andreas Bloomquist
       h2 Full Stack Developer
 
@@ -22,21 +23,21 @@ block content
                 i.fi-social-twitter
 
     #skills.row
-      #left-container.small-2.large-3.columns.skills
+      h2.skills A few of my skills
+      #left-container.small-2.medium-3.columns.skills
         h2 Agile guru
         p I've worked with many Agile methodologies across multiple teams, and I'm a Certified Scrum Master.
 
-      #center-container.small-4.large-3.columns.skills
+      #center-container.small-4.medium-3.columns.skills
         h2 Full Stack Developer
-        p I love to code! I'm proud to say that I've taken my skills to the next level by attending General Assembly's Web Development Immersive 12-week course.
+        p I love to code! 
 
-      #right-container.small-6.large-3.columns.skills
+      #right-container.small-6.medium-3.columns.skills
         h2 Music & Travel lover!
         p Besides coding, my other passions including music and traveling.
 
       #skill-icons.row
         .large-12.columns.skills-icons
-          h2.skills A few of my skills
           #iconCarousel.row
             .skills
               img.mongo(src="images/mongodb-logo.jpeg", alt="MongoDB")
@@ -71,7 +72,29 @@ block content
           img.textjames(src="images/textjames.png")
 
     #about
-      img.andreas(src="images/andreas.jpg")
+      img.andreas(src="images/andreas_test.png")
+    #about-text
+      .row
+        .medium-10.medium-centered.columns
+          h2 Andreas Bloomquist
+          p I am a graduate of a 12-week web development immersive course seeking to pursue a full-time career in web development. The full-time course covered topics such as JavaScript, JQuery, AJAX, Node.js, AngularJS, SQL and NoSQL Databases, RESTful APIs and Ruby on Rails.
+          p I grew up on the East Coast, in a suburb of Boston, but moved to the West Coast to attend Occidental College in Los Angeles. Immediately after graduating college, I moved to the Bay Area where I reside today as a proud Oakland resident. Suffice to say I prefer the Californian weather over New England winters.
+          p When I'm not infront working at the commandline I love to travel the world, experience new adventures, and make electronic music. 
+
+    #contact
+      .row
+        .medium-10.medium-centered.columns
+          h2 Get in touch!
+          p I'm always looking for new coding buddies! Please don't hesitate to contact me if you have a project in mind, or if you just want to talk code over some coffee.
+
+    script
+          $(document).foundation();
+
+
+
+
+
+
 
 
 

@@ -6,6 +6,7 @@ $(function(){
     dots: true,
     infinite: true,
     speed: 1000,
+    arrows: true,
     slidesToShow: 4,
     slidesToScroll: 4,
     autoplay: true,

@@ -1,9 +1,10 @@
 @import "bower_components/foundation/scss/foundation";
 @import url(http://fonts.googleapis.com/css?family=Oswald);
 @import url(http://fonts.googleapis.com/css?family=Quattrocento);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
 
 
-$main-font: 'Oswald', sans-serif;
+$main-font: 'PT Sans', sans-serif;
 $secondary-font: 'Quattrocento', serif;
 
 h1{
@@ -23,12 +24,16 @@ i{
 li, p{
 	font-family: $secondary-font;
 }
+.off-canvas-wrap {
+  position: fixed;
+  z-index: 1000;
+  padding: 0;
+}
 #top-container{
 	background-image: url('images/bay_bridge.jpg');
 	background-size: cover;
 	width: 100%;
 	height: 40rem;
-	position: absolute;
 	background-position-y: 40%;
 }
 #bottom-container{
@@ -37,6 +42,9 @@ li, p{
 .left-off-canvas-menu{
 	bottom: -45rem;
 	background-color: rgba(175,175,175,.8)
+}
+a.left-off-canvas-toggle.menu-icon {
+  margin-top: -1rem;
 }
 .tab-bar{
 	background-color: rgba(0,0,0,0);
@@ -66,7 +74,13 @@ ul.off-canvas-list{
 }
 #skills{
 	margin-top: 10vh;
-	height: 100%
+	height: 100%;
+	h2 {
+	padding-bottom: 5vh;
+	}
+}
+div#iconCarousel {
+  margin-top: 15vh;
 }
 .skills{
 	text-align: center;
@@ -76,13 +90,20 @@ ul.off-canvas-list{
 		height: 5rem;
 	}
 }
+#left-container, #center-container {
+  margin-right: 4rem;
+}
 #left-container, #center-container, #right-container {
 	border: 1px solid black;
 	border-radius: 50rem;
-	height: 20rem;
-	width: 20rem;
+	height: 18rem;
+	width: 18rem;
 	h2 {
-		padding-top: 5vh;
+		padding-top: 8vh;
+		font-size: 1.25rem;
+	}
+	p {
+		font-size: 0.75rem;
 	}
 }
 div.skills-icons{
@@ -111,13 +132,47 @@ div.skills-icons{
 #about{
 	height: 100%;
 	background-color: #0A0A0A;
-	padding-top: 5rem;
+}
+#about-text{
+	padding-top: 1rem;
 	img{
 		display: block;
 		height: 80vh;
 		margin: 0 auto;
 	}
-
+	h2{
+		color: black;
+		text-align: center;
+	}
+	p{
+		color: black;
+		text-align: center;
+		font-family: $main-font;
+	}
+}
+.slick-prev:before, .slick-next:before {
+  color: black;
+  font-size: 2rem;
+  &:hover, &:focus {
+    outline: none;
+    background: none;
+  }
+}
+#contact{
+	height: 72vh;
+	background-image: url('images/muir.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	h2{
+		text-align: center;
+		margin-top: 2rem;
+		font-size: 3rem;
+		color: white;
+	}
+	p{
+		color: white;
+		font-family: $main-font;
+	}
 }
 
 // Media queries

@@ -12,7 +12,7 @@ gulp.task('default', function(){
 
 gulp.task('process-styles', function() {
 	return gulp.src('./sass/*.scss', { style: "expanded" })
-	  .pipe(sass.sync().on('error', sass.logError))
+	.pipe(sass.sync().on('error', sass.logError))
     .pipe(prefix(['last 2 version']))
     .pipe(gulp.dest("public/stylesheets"))
     .pipe(rename({suffix: '.min'}))
