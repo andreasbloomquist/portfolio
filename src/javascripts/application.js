@@ -1,6 +1,6 @@
 $(function(){
 
-  $(document).foundation();
+
 
   $('#iconCarousel').slick({
     dots: true,

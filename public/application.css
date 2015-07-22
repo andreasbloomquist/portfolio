@@ -6314,14 +6314,15 @@ li, p {
   background-position-y: 40%; }
 
 #bottom-container {
-  margin-top: 30vw; }
+  height: 12vh; }
 
 .left-off-canvas-menu {
   height: 100vh;
   background-color: rgba(175, 175, 175, 0.8); }
 
-a.left-off-canvas-toggle.menu-icon {
-  margin-top: -1rem; }
+a.left-off-canvas-toggle {
+  margin-top: -1rem;
+  margin-left: 1rem; }
 
 .tab-bar {
   background-color: transparent; }
@@ -6331,11 +6332,6 @@ a.left-off-canvas-toggle.menu-icon {
 
 ul.off-canvas-list li a {
   border: none; }
-
-.tab-bar .menu-icon span::after {
-  box-shadow: 0 0 0 2px black, 0 9px 0 2px black, 0 18px 0 2px black;
-  margin-top: 0.5rem;
-  width: 2rem; }
 
 #arrow img {
   height: 8vh;
@@ -6348,9 +6344,9 @@ ul.off-canvas-list li a {
 
 #skills {
   margin-top: 10vh;
-  height: 100%; }
+  height: 108%; }
   #skills h2 {
-    padding-bottom: 5vh; }
+    padding: 3vh; }
 
 div#iconCarousel {
   margin-top: 15vh; }
@@ -6396,19 +6392,23 @@ div.skills-icons h2.skills {
   height: 100%;
   background-color: #0A0A0A; }
 
-#about-text {
-  padding-top: 1rem; }
-  #about-text img {
-    display: block;
-    height: 80vh;
-    margin: 0 auto; }
-  #about-text h2 {
-    color: black;
-    text-align: center; }
-  #about-text p {
-    color: black;
-    text-align: center;
-    font-family: "PT Sans", sans-serif; }
+#about-text .row {
+  padding: 5rem; }
+
+#about-text img {
+  display: block;
+  height: 80vh;
+  margin: 0 auto; }
+
+#about-text h2 {
+  color: black;
+  text-align: center;
+  padding-top: 2rem; }
+
+#about-text p {
+  color: black;
+  text-align: center;
+  font-family: "PT Sans", sans-serif; }
 
 .slick-prev:before, .slick-next:before {
   color: black;
@@ -6422,13 +6422,14 @@ div.skills-icons h2.skills {
   background-image: url("images/muir.jpg");
   background-size: cover;
   background-repeat: no-repeat; }
-  #contact h2 {
+  #contact p, #contact h2 {
     text-align: center;
+    color: white; }
+  #contact h2 {
     margin-top: 2rem;
     font-size: 3rem;
     color: white; }
   #contact p {
-    color: white;
     font-family: "PT Sans", sans-serif; }
 
 @media (max-width: 900px) {

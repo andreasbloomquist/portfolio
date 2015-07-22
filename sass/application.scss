@@ -37,14 +37,15 @@ li, p{
 	background-position-y: 40%;
 }
 #bottom-container{
-	margin-top: 30vw;
+	height: 12vh;
 }
 .left-off-canvas-menu{
 	height: 100vh;
 	background-color: rgba(175,175,175,.8)
 }
-a.left-off-canvas-toggle.menu-icon {
+a.left-off-canvas-toggle {
   margin-top: -1rem;
+  margin-left: 1rem;
 }
 .tab-bar{
 	background-color: rgba(0,0,0,0);
@@ -55,11 +56,7 @@ a.left-off-canvas-toggle.menu-icon {
 ul.off-canvas-list li a{
 	border: none;
 }
-.tab-bar .menu-icon span::after {
-	box-shadow: 0 0 0 2px black, 0 9px 0 2px black, 0 18px 0 2px black;
-	margin-top: 0.5rem;
-	width: 2rem;
-	}
+
 #arrow{
 	img{
 		height: 8vh;
@@ -73,9 +70,9 @@ ul.off-canvas-list li a{
 }
 #skills{
 	margin-top: 10vh;
-	height: 100%;
+	height: 108%;
 	h2 {
-	padding-bottom: 5vh;
+	padding: 3vh;
 	}
 }
 div#iconCarousel {
@@ -133,7 +130,9 @@ div.skills-icons{
 	background-color: #0A0A0A;
 }
 #about-text{
-	padding-top: 1rem;
+	.row{
+		padding: 5rem;
+	}
 	img{
 		display: block;
 		height: 80vh;
@@ -142,6 +141,7 @@ div.skills-icons{
 	h2{
 		color: black;
 		text-align: center;
+		padding-top: 2rem;
 	}
 	p{
 		color: black;
@@ -162,14 +162,16 @@ div.skills-icons{
 	background-image: url('images/muir.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	h2{
+	p, h2{
 		text-align: center;
+		color: white;
+	}
+	h2{
 		margin-top: 2rem;
 		font-size: 3rem;
 		color: white;
 	}
 	p{
-		color: white;
 		font-family: $main-font;
 	}
 }
