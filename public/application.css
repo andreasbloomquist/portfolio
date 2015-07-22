@@ -6385,6 +6385,16 @@ div.skills-icons h2.skills {
     text-align: center; }
   #projects #examples {
     margin-top: 3rem; }
+    #projects #examples .text {
+      padding: 0.5rem;
+      color: white; }
+      #projects #examples .text p {
+        font-family: "PT Sans", sans-serif; }
+    #projects #examples .hiddenOverlay {
+      display: none; }
+    #projects #examples .showOverlay {
+      display: block;
+      opacity: 0.9; }
   #projects .projects {
     margin-bottom: 1rem; }
 

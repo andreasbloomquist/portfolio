@@ -159,6 +159,13 @@ sticky_class:"sticky",custom_back_text:!0,back_text:"Back",mobile_show_parent_li
 
 $(function(){
 
+  $('.projects').hover(function(){
+    console.log('hovering');
+    $(this).children('.text').removeClass('hiddenOverlay');
+  }, function(){
+    $(this).children('.text').addClass('hiddenOverlay');
+  });
+
   $('.left-off-canvas-toggle').on('click', function(){
     if ($(this).hasClass('close')) {
       $(this).removeClass('close');

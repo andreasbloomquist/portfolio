@@ -60,16 +60,38 @@ block content
             .skills
               img.css(src="images/css3.svg")
     #projects
-      .medium-6.medium-centered.columns
+      .medium-6.small-12.small-centered.medium-centered.columns
         h2 A few of the projects I've built
         p Check out some examples of projects I've built over the last few months. I chose to highlight these projects as they show off the breadth of my technical skills, while also examplifying products that solve an actual problem.
       #examples
-        .large-4.columns.projects.projectOne
+        .medium-4.small-12.columns.projects.project
           img.genreme(src="images/genreme.png")
-        .large-4.columns.projects.projectTwo
+          .hiddenOverlay.text
+            p Genre.me
+            p Social network to discover music genres. Individually built RESTful api with Node.js, Express, and consuming the SoundCloud Api. 
+            p
+              a(href="http://genre-me.herokuapp.com/") genre.me | 
+              a(href="https://github.com/andreasbloomquist/genre-me") GitHub Repo
+
+        .medium-4.small-12.columns.projects.project
           img.petid(src="images/petid.png")
-        .large-4.columns.projects.projectThree
+          .hiddenOverlay.text
+            p PetID
+            p App to connect pet owners with their lost pets. Group project utilizing pair programming, and Test Driven Development.  For this, I led the front-end development. Technologies include, Ruby on Rails, Mandrill, and AWS.
+            p
+              a(href="https://petid.herokuapp.com/") PetID | 
+              a(href="https://github.com/petid/petid_app") GitHub Repo
+
+        .medium-4.small-12.columns.projects.project
           img.textjames(src="images/textjames.png")
+          .hiddenOverlay.text
+            p Text James
+            p Personalized and anonymous platform to connect tenants seeking office space with commercial real estate brokers via SMS. For this project I built an API using Ruby on Rails to communicate with Twilio and dispatch SMS messages. Other technologies include PostgreSQL, JavaScript and Foundation Framework.
+            p
+              a(href="http://www.textjames.co/") Text James | 
+              a(href="https://github.com/andreasbloomquist/james-2.0") GitHub Repo
+ 
+
 
     #about
       img.andreas(src="images/andreas_test.png")
@@ -78,8 +100,8 @@ block content
         .medium-10.medium-centered.columns
           h2 Andreas Bloomquist
           p I am a graduate of a 12-week web development immersive course seeking to pursue a full-time career in web development. The full-time course covered topics such as JavaScript, JQuery, AJAX, Node.js, AngularJS, SQL and NoSQL Databases, RESTful APIs and Ruby on Rails.
-          p I grew up on the East Coast, in a suburb of Boston, but moved to the West Coast to attend Occidental College in Los Angeles. Immediately after graduating college, I moved to the Bay Area where I reside today as a proud Oakland resident. Suffice to say I prefer the Californian weather over New England winters.
-          p When I'm not infront working at the commandline I love to travel the world, experience new adventures, and make electronic music. 
+          p I grew up on the East Coast, in a suburb of Boston, but moved to the West Coast to attend Occidental College in Los Angeles. Immediately after graduating college, I moved to the Bay Area to work in the Tech industry. Suffice to say I prefer the Californian weather over New England winters.
+          p When I'm not working at the commandline I love to travel the world, experience new adventures, and make electronic music. 
 
     #contact
       .row

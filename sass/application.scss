@@ -119,6 +119,21 @@ div.skills-icons{
 	}
 	#examples{
 		margin-top: 3rem;
+    .text{
+      // margin-top: -13rem;
+      padding: 0.5rem;
+      color: white;
+      p{
+        font-family: $main-font;
+      }
+    }
+		.hiddenOverlay{
+			display: none;
+		}
+    .showOverlay{
+      display: block;
+      opacity: 0.9;
+    }
 	}
 	.projects{
 		margin-bottom: 1rem;
