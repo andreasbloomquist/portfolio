@@ -6,7 +6,7 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify');
 
-gulp.task('default', function(){
+gulp.task('default', ['process-scripts', 'process-styles'], function(){
 	console.log("I'm running the default task!")
 });
 
@@ -25,6 +25,6 @@ gulp.task('process-scripts', function(){
     .pipe(concat('main.js'))
     .pipe(gulp.dest('public/javascripts'))
     .pipe(rename({suffix: '.min'}))
-    // .pipe(uglify())
+    .pipe(uglify())
     .pipe(gulp.dest('public/javascripts'))
 })

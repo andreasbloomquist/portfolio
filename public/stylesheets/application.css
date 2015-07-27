@@ -1,5 +1,6 @@
-@import url(http://fonts.googleapis.com/css?family=Oswald);
-@import url(http://fonts.googleapis.com/css?family=Quattrocento);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Quattrocento);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
 meta.foundation-version {
   font-family: "/5.5.2/"; }
 
@@ -6257,11 +6258,11 @@ th.hide-for-touch {
     display: none !important; } }
 
 h1 {
-  font-family: "Oswald", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 7rem; }
 
 h2 {
-  font-family: "Oswald", sans-serif; }
+  font-family: "PT Sans", sans-serif; }
 
 i {
   font-size: 2rem;
@@ -6272,20 +6273,28 @@ i {
 li, p {
   font-family: "Quattrocento", serif; }
 
+.off-canvas-wrap {
+  position: fixed;
+  z-index: 1000;
+  padding: 0; }
+
 #top-container {
   background-image: url("images/bay_bridge.jpg");
   background-size: cover;
   width: 100%;
-  height: 40rem;
-  position: absolute;
+  height: 86vh;
   background-position-y: 40%; }
 
 #bottom-container {
-  margin-top: 28vw; }
+  height: 12vh; }
 
 .left-off-canvas-menu {
-  bottom: -45rem;
+  height: 100vh;
   background-color: rgba(175, 175, 175, 0.8); }
+
+a.left-off-canvas-toggle {
+  margin-top: -1rem;
+  margin-left: 1rem; }
 
 .tab-bar {
   background-color: transparent; }
@@ -6296,16 +6305,10 @@ li, p {
 ul.off-canvas-list li a {
   border: none; }
 
-.tab-bar .menu-icon span::after {
-  box-shadow: 0 0 0 2px black, 0 9px 0 2px black, 0 18px 0 2px black;
-  margin-top: 0.5rem;
-  width: 2rem; }
-
-ul.off-canvas-list {
-  margin-top: 3rem; }
-
 #arrow img {
-  height: 10vh; }
+  height: 8vh;
+  display: block;
+  margin: auto; }
 
 .social {
   display: inline;
@@ -6313,9 +6316,9 @@ ul.off-canvas-list {
 
 #skills {
   margin-top: 10vh;
-  height: 100%; }
+  height: 108%; }
   #skills h2 {
-    padding-bottom: 5vh; }
+    padding: 3vh; }
 
 div#iconCarousel {
   margin-top: 15vh; }
@@ -6354,17 +6357,42 @@ div.skills-icons h2.skills {
     text-align: center; }
   #projects #examples {
     margin-top: 3rem; }
+    #projects #examples .text {
+      padding: 0.5rem;
+      color: white; }
+      #projects #examples .text p {
+        font-family: "PT Sans", sans-serif; }
+    #projects #examples .hiddenOverlay {
+      display: none; }
+    #projects #examples .showOverlay {
+      display: block;
+      opacity: 0.9; }
   #projects .projects {
     margin-bottom: 1rem; }
+    #projects .projects img:hover {
+      border: 1px solid white; }
 
 #about {
   height: 100%;
-  background-color: #0A0A0A;
-  padding-top: 5rem; }
-  #about img {
-    display: block;
-    height: 80vh;
-    margin: 0 auto; }
+  background-color: #0A0A0A; }
+
+#about-text .row {
+  padding: 5rem; }
+
+#about-text img {
+  display: block;
+  height: 80vh;
+  margin: 0 auto; }
+
+#about-text h2 {
+  color: black;
+  text-align: center;
+  padding-top: 2rem; }
+
+#about-text p {
+  color: black;
+  text-align: center;
+  font-family: "PT Sans", sans-serif; }
 
 .slick-prev:before, .slick-next:before {
   color: black;
@@ -6372,6 +6400,21 @@ div.skills-icons h2.skills {
   .slick-prev:before:hover, .slick-prev:before:focus, .slick-next:before:hover, .slick-next:before:focus {
     outline: none;
     background: none; }
+
+#contact {
+  height: 72vh;
+  background-image: url("images/muir.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+  #contact p, #contact h2 {
+    text-align: center;
+    color: white; }
+  #contact h2 {
+    margin-top: 2rem;
+    font-size: 3rem;
+    color: white; }
+  #contact p {
+    font-family: "PT Sans", sans-serif; }
 
 @media (max-width: 900px) {
   h1#title {

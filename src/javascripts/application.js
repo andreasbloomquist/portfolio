@@ -1,7 +1,23 @@
 $(function(){
+  $('.projects').hover(function(){
+        console.log('hovering');
+        $(this).children('.text').removeClass('hiddenOverlay');
+      }, function(){
+        $(this).children('.text').addClass('hiddenOverlay');
+      });
 
+  $('.left-off-canvas-toggle').on('click', function(){
+    if ($(this).hasClass('close')) {
+      $(this).removeClass('close');
+      $('.icon').removeClass('fi-x')
+      $('.icon').addClass('fi-list')
+    } else {
+      $(this).addClass("close");
+      $('.icon').removeClass('fi-list')
+      $('.icon').addClass('fi-x')
 
-
+    };
+  });
   $('#iconCarousel').slick({
     dots: true,
     infinite: true,
