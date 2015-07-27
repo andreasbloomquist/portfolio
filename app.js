@@ -10,7 +10,7 @@ var app = express();
 app.use(
   sassMiddleware({
     src: __dirname + '/sass',
-    dest: __dirname + '/public',
+    dest: __dirname + '/public/stylesheets',
   })
 );
 
