@@ -30,4 +30,6 @@ gulp.task('process-scripts', function(){
 
 gulp.task('watch', function(e){
   gulp.watch('sass/application.scss', ['process-styles'])
+  gulp.watch('src/javascripts/*.js', ['process-scripts'])
+
 })

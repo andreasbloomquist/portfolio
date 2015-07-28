@@ -15,9 +15,14 @@ $(function(){
       $(this).addClass("close");
       $('.icon').removeClass('fi-list')
       $('.icon').addClass('fi-x')
-
     };
   });
+  
+  $('.scollToSkills').on('click', function(){
+    console.log('clicked mofo')
+    $(window).scrollTo('#skills', 800);
+  });
+
   $('#iconCarousel').slick({
     dots: true,
     infinite: true,

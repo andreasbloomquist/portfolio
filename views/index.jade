@@ -6,14 +6,20 @@ block content
     .row
       .medium-8.medium-centered.columns
         #title
-          h1 Hi, I'm Andreas
-          h2 and I'm a full stack developer, Agile guru, and Git ninja.
+          h1 Hi, I'm 
+            span.color Andreas
+          h2 and I'm a full stack 
+            span.color developer
+            span ,&nbsp Agile
+            span.color &nbspguru
+            span ,&nbsp and Git 
+            span.color ninja.
+          h2.green ...nodemon...
 
   #bottom-container.row
       #arrow.medium-2.medium-offset-5.columns
-        a(href="#skills")
-          img(src="images/down.ico")
-      #socials.medium-3.columns
+        img.scollToSkills(src="images/down.ico")
+      #socials.medium-3.medium-offset-2.small-12.small-centered.medium-uncentered.columns
         #github.social
           a(href="https://github.com/andreasbloomquist")
             i.fi-social-github
@@ -24,25 +30,26 @@ block content
           a(href="https://twitter.com/andrebloom")
             i.fi-social-twitter
 
-    #skills.row
-      h2.skills A few of my skills
-      #left-container.small-2.medium-3.columns.skills
-        h2 Agile guru
-        p I've worked with many Agile methodologies across multiple teams, and I'm a Certified Scrum Master.
+    #skills
+      .row
+        h2.skills A few of my skills
+        #left-container.small-12.medium-4.small-centered.medium-uncentered.columns.skills
+          h2 Agile guru
+          p I've worked with many Agile methodologies across multiple teams, and I'm a Certified Scrum Master.
 
-      #center-container.small-4.medium-3.columns.skills
-        h2 Full Stack Developer
-        p Some might say my happy place is at the commandline. I was a hobby coder for many years, and took my skills to the next level through General Assemblys 12-week Web Development Immersive.
+        #center-container.small-12.medium-4.small-centered.medium-uncentered.columns.skills
+          h2 Full Stack Developer
+          p Some might say my happy place is at the commandline. I was a hobby coder for many years, and took my skills to the next level through General Assemblys 12-week Web Development Immersive.
 
-      #right-container.small-6.medium-3.columns.skills
-        h2 Food, Travel & Music lover!
-        p When I'm not building amazing apps, you can find me cooking, traveling the world, or discovering new music (or all at once).
+        #right-container.small-12.medium-4.small-centered.medium-uncentered.columns.end.skills
+          h2 Food, Travel & Music lover!
+          p When I'm not building amazing apps, you can find me cooking, traveling the world, or discovering new music (or all at once).
 
       #skill-icons.row
         .large-12.columns.skills-icons
           #iconCarousel.row
             .skills
-              img.mongo(src="images/mongodb-logo.jpeg", alt="MongoDB")
+              img.mongo(src="images/mongodb-logo.png", alt="MongoDB")
             .skills
               img.express(src="images/express_logo.png")
             .skills

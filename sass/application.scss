@@ -4,6 +4,9 @@
 
 $main-font: 'PT Sans', sans-serif;
 $secondary-font: 'Quattrocento', serif;
+$red: #F33E1B;
+$green: #80bd01;
+
 #title{
     border: 1px solid #fff;
     margin-top: 7rem;
@@ -13,19 +16,27 @@ $secondary-font: 'Quattrocento', serif;
     font-size: 3rem;
     color: white;
     text-align: center;
+    padding-top: 1rem;
   }
   h2{
     font-family: $main-font;
     color: white;
     text-align: center;
     font-size: 2rem;
+    padding: 1rem;
+  }
+  .color{
+    color: $red;
+  }
+  .green{
+    color: $green;
   }
 }
 i{
   font-size: 2rem;
   color: black;
   &:hover{
-    color: grey;
+    color: $red;
   }
 }
 li, p{
@@ -44,7 +55,8 @@ li, p{
   background-position-y: 40%;
 }
 #bottom-container{
-  height: 12vh;
+  height: 12vh;    
+  padding-top: 4vh;
 }
 .left-off-canvas-menu{
   height: 100vh;
@@ -74,7 +86,9 @@ ul.off-canvas-list li a{
   display: inline;
   padding: 1.5vw;
 }
+
 #skills{
+  background-image: url('grey.png');
   margin-top: 10vh;
   height: 108%;
   h2 {

@@ -11,12 +11,20 @@
   font-size: 3rem;
   color: white;
   text-align: center;
+  padding-top: 1rem;
 }
 #title h2 {
   font-family: "PT Sans", sans-serif;
   color: white;
   text-align: center;
   font-size: 2rem;
+  padding: 1rem;
+}
+#title .color {
+  color: #F33E1B;
+}
+#title .green {
+  color: #80bd01;
 }
 
 i {
@@ -24,7 +32,7 @@ i {
   color: black;
 }
 i:hover {
-  color: grey;
+  color: #F33E1B;
 }
 
 li, p {
@@ -47,6 +55,7 @@ li, p {
 
 #bottom-container {
   height: 12vh;
+  padding-top: 4vh;
 }
 
 .left-off-canvas-menu {
@@ -83,6 +92,7 @@ ul.off-canvas-list li a {
 }
 
 #skills {
+  background-image: url("grey.png");
   margin-top: 10vh;
   height: 108%;
 }
