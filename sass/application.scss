@@ -57,6 +57,7 @@ li, p{
 #bottom-container{
   height: 12vh;    
   padding-top: 4vh;
+  padding-bottom: 10vh;
 }
 .left-off-canvas-menu{
   height: 100vh;
@@ -72,25 +73,44 @@ a.left-off-canvas-toggle {
 .left-small{
   border: none;
 }
-ul.off-canvas-list li a{
+ul.off-canvas-list div{
+  transition: all 0.5s ease;
   border: none;
+  height: 3vh;
+  padding: 1vw;
+  &:hover{
+    color: $red;
+    background-color: black;
+    font-family: $main-font;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+  }
 }
-#arrow{
-  img{
-    height: 8vh;
-    display: block;
-    margin: auto;
+div#projectsArrow {
+    padding-top: 10vh;
+}
+.arrow{
+  transition: height 0.1s ease;
+  height: 8vh;
+  display: block;
+  margin: auto;
+  &:hover{
+    transition: height 0.1s ease;
+    height: 10vh;
+    cursor: pointer;
   }
 }
 .social{
   display: inline;
   padding: 1.5vw;
 }
-
+ul.slick-dots {
+  margin: auto 0;
+}
 #skills{
   background-image: url('grey.png');
-  margin-top: 10vh;
-  height: 108%;
+  height: 100%;
   h2 {
   padding: 3vh;
   }
@@ -154,6 +174,12 @@ div.skills-icons{
       opacity: 0.9;
     }
   }
+  .projectLink{
+    color: $green;
+    &:hover{
+      color: $red;
+    }
+  }
   .projects{
     margin-bottom: 1rem;
     img{
@@ -162,6 +188,9 @@ div.skills-icons{
       }
     }
   }
+}
+.aboutArrow {
+    padding-top: 20vh;
 }
 #about{
   height: 100%;

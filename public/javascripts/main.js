@@ -1,6 +1,5 @@
 $(function(){
   $('.projects').hover(function(){
-        console.log('hovering');
         $(this).children('.text').removeClass('hiddenOverlay');
       }, function(){
         $(this).children('.text').addClass('hiddenOverlay');
@@ -19,8 +18,19 @@ $(function(){
   });
   
   $('.scollToSkills').on('click', function(){
-    console.log('clicked mofo')
     $(window).scrollTo('#skills', 800);
+  });
+
+  $('.scollToProjects').on('click', function(){
+    $(window).scrollTo('#projects', 800);
+  });
+
+  $('.scollToAbout').on('click', function(){
+    $(window).scrollTo('#about', 800);
+  });
+
+  $('.scollToContact').on('click', function(){
+    $(window).scrollTo('#contact', 800);
   });
 
   $('#iconCarousel').slick({

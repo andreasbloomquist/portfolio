@@ -18,7 +18,7 @@ block content
 
   #bottom-container.row
       #arrow.medium-2.medium-offset-5.columns
-        img.scollToSkills(src="images/down.ico")
+        img.scollToSkills.arrow(src="images/down.ico")
       #socials.medium-3.medium-offset-2.small-12.small-centered.medium-uncentered.columns
         #github.social
           a(href="https://github.com/andreasbloomquist")
@@ -68,6 +68,10 @@ block content
               img.html(src="images/HTML5_Logo.svg")
             .skills
               img.css(src="images/css3.svg")
+      #projectsArrow.row
+        .medium-6.medium-centered.columns
+          img.scollToProjects.arrow(src="images/down.ico")
+
     #projects
       .medium-6.small-12.small-centered.medium-centered.columns
         h2 A few of the projects I've built
@@ -79,8 +83,8 @@ block content
             p Genre.me
             p Social network to discover music genres. Individually built RESTful api with Node.js, Express, and consuming the SoundCloud Api. 
             p
-              a(href="http://genre-me.herokuapp.com/") genre.me | 
-              a(href="https://github.com/andreasbloomquist/genre-me") GitHub Repo
+              a.projectLink(href="http://genre-me.herokuapp.com/") genre.me | 
+              a.projectLink(href="https://github.com/andreasbloomquist/genre-me") GitHub Repo
 
         .medium-4.small-12.columns.projects.project
           img.petid(src="images/petid.png")
@@ -88,16 +92,19 @@ block content
             p PetID
             p App to connect pet owners with their lost pets. Group project utilizing pair programming, and Test Driven Development.  For this, I led the front-end development. Technologies include, Ruby on Rails, Mandrill, and AWS.
             p
-              a(href="https://petid.herokuapp.com/") PetID | 
-              a(href="https://github.com/petid/petid_app") GitHub Repo
+              a.projectLink(href="https://petid.herokuapp.com/") PetID | 
+              a.projectLink(href="https://github.com/petid/petid_app") GitHub Repo
 
         .medium-4.small-12.columns.projects.project
           img.textjames(src="images/textjames.png")
           .hiddenOverlay.text
             p Text James
-            p Personalized and anonymous platform to connect tenants seeking office space with commercial real estate brokers via SMS. For this project I built an API using Ruby on Rails to communicate with Twilio and dispatch SMS messages. Other technologies include PostgreSQL, JavaScript and Foundation Framework.
+            p Anonymous platform to connect tenants seeking office space with commercial real estate brokers via SMS. For this project I built an API using Ruby on Rails to communicate with Twilio and dispatch SMS messages. Other technologies include PostgreSQL, JavaScript and Foundation Framework.
             p We're in beta! All information pertaining to TextJames is strictly propietary, and the site is only open to select individuals. Please contact me directly for access.
 
+      #aboutArrow.row
+        .medium-6.medium-centered.columns.aboutArrow
+          img.scollToAbout.arrow(src="images/down.ico")
 
     #about
       img.andreas(src="images/andreas_test.png")

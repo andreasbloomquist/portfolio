@@ -56,6 +56,7 @@ li, p {
 #bottom-container {
   height: 12vh;
   padding-top: 4vh;
+  padding-bottom: 10vh;
 }
 
 .left-off-canvas-menu {
@@ -76,14 +77,38 @@ a.left-off-canvas-toggle {
   border: none;
 }
 
-ul.off-canvas-list li a {
+ul.off-canvas-list div {
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
   border: none;
+  height: 3vh;
+  padding: 1vw;
+}
+ul.off-canvas-list div:hover {
+  color: #F33E1B;
+  background-color: black;
+  font-family: "PT Sans", sans-serif;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+          transition: all 0.2s ease;
 }
 
-#arrow img {
+div#projectsArrow {
+  padding-top: 10vh;
+}
+
+.arrow {
+  -webkit-transition: height 0.1s ease;
+          transition: height 0.1s ease;
   height: 8vh;
   display: block;
   margin: auto;
+}
+.arrow:hover {
+  -webkit-transition: height 0.1s ease;
+          transition: height 0.1s ease;
+  height: 10vh;
+  cursor: pointer;
 }
 
 .social {
@@ -91,10 +116,13 @@ ul.off-canvas-list li a {
   padding: 1.5vw;
 }
 
+ul.slick-dots {
+  margin: auto 0;
+}
+
 #skills {
   background-image: url("grey.png");
-  margin-top: 10vh;
-  height: 108%;
+  height: 100%;
 }
 #skills h2 {
   padding: 3vh;
@@ -163,11 +191,21 @@ div.skills-icons h2.skills {
   display: block;
   opacity: 0.9;
 }
+#projects .projectLink {
+  color: #80bd01;
+}
+#projects .projectLink:hover {
+  color: #F33E1B;
+}
 #projects .projects {
   margin-bottom: 1rem;
 }
 #projects .projects img:hover {
   border: 1px solid white;
+}
+
+.aboutArrow {
+  padding-top: 20vh;
 }
 
 #about {
