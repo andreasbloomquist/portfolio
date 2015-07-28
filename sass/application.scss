@@ -80,6 +80,7 @@ ul.off-canvas-list div{
   padding: 1vw;
   &:hover{
     color: $red;
+    border: 1px solid $red;
     background-color: black;
     font-family: $main-font;
     cursor: pointer;
@@ -130,10 +131,11 @@ div#iconCarousel {
   margin-right: 4rem;
 }
 #left-container, #center-container, #right-container {
-  border: 1px solid black;
+  border: 1.5px solid $green;
   border-radius: 50rem;
   height: 18rem;
   width: 18rem;
+  background-color: rgba(255,255,255,0.7);
   h2 {
     padding-top: 8vh;
     font-size: 1.25rem;
@@ -225,11 +227,11 @@ div.skills-icons{
   }
 }
 #contact{
-  height: 72vh;
+  height: 57vh;
   background-image: url('muir.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  
+  background-position-y: -19rem;
   p, h2{
     text-align: center;
     color: white;
@@ -238,9 +240,26 @@ div.skills-icons{
     margin-top: 2rem;
     font-size: 3rem;
     color: white;
+    padding-top: 5rem;
   }
   p{
     font-family: $main-font;
+  }
+}
+.contact-links{
+  a{
+    margin: auto 0;
+    text-align: center;
+  }
+}
+i.contact {
+  text-align: center;
+  padding: 1rem;
+  font-size: 3.5rem;
+  margin: auto 0;
+  color: white;
+  &:hover{
+    color: $green;
   }
 }
 

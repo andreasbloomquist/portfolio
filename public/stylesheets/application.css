@@ -86,6 +86,7 @@ ul.off-canvas-list div {
 }
 ul.off-canvas-list div:hover {
   color: #F33E1B;
+  border: 1px solid #F33E1B;
   background-color: black;
   font-family: "PT Sans", sans-serif;
   cursor: pointer;
@@ -146,10 +147,11 @@ div#iconCarousel {
 }
 
 #left-container, #center-container, #right-container {
-  border: 1px solid black;
+  border: 1.5px solid #80bd01;
   border-radius: 50rem;
   height: 18rem;
   width: 18rem;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 #left-container h2, #center-container h2, #right-container h2 {
   padding-top: 8vh;
@@ -242,10 +244,11 @@ div.skills-icons h2.skills {
 }
 
 #contact {
-  height: 72vh;
+  height: 57vh;
   background-image: url("muir.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position-y: -19rem;
 }
 #contact p, #contact h2 {
   text-align: center;
@@ -255,9 +258,26 @@ div.skills-icons h2.skills {
   margin-top: 2rem;
   font-size: 3rem;
   color: white;
+  padding-top: 5rem;
 }
 #contact p {
   font-family: "PT Sans", sans-serif;
+}
+
+.contact-links a {
+  margin: auto 0;
+  text-align: center;
+}
+
+i.contact {
+  text-align: center;
+  padding: 1rem;
+  font-size: 3.5rem;
+  margin: auto 0;
+  color: white;
+}
+i.contact:hover {
+  color: #80bd01;
 }
 
 @media (max-width: 900px) {
