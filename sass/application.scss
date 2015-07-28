@@ -4,16 +4,22 @@
 
 $main-font: 'PT Sans', sans-serif;
 $secondary-font: 'Quattrocento', serif;
-
-h1{
-  font-family: $main-font;
-  font-size: 3rem;
-  text-align: center;
-  color: white;
-}
-h2{
-  font-family: $main-font;
-  color: white;
+#title{
+    border: 1px solid #fff;
+    margin-top: 7rem;
+    border-radius: .5rem;
+  h1{
+    font-family: $main-font;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+  }
+  h2{
+    font-family: $main-font;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+  }
 }
 i{
   font-size: 2rem;

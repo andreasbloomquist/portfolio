@@ -1,16 +1,22 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald);
 @import url(https://fonts.googleapis.com/css?family=Quattrocento);
 @import url(https://fonts.googleapis.com/css?family=PT+Sans);
-h1 {
+#title {
+  border: 1px solid #fff;
+  margin-top: 7rem;
+  border-radius: .5rem;
+}
+#title h1 {
   font-family: "PT Sans", sans-serif;
   font-size: 3rem;
-  text-align: center;
   color: white;
+  text-align: center;
 }
-
-h2 {
+#title h2 {
   font-family: "PT Sans", sans-serif;
   color: white;
+  text-align: center;
+  font-size: 2rem;
 }
 
 i {
