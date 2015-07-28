@@ -1,5 +1,5 @@
 var gulp = require('gulp'),
-    sass = require('gulp-sass');
+    sass = require('gulp-ruby-sass');
     prefix = require('gulp-autoprefixer'),
     minifycss = require('gulp-minify-css'),
     rename = require('gulp-rename'),
@@ -11,8 +11,7 @@ gulp.task('default', ['process-scripts', 'process-styles'], function(){
 });
 
 gulp.task('process-styles', function() {
-	return gulp.src('./sass/*.scss', { style: "expanded" })
-	.pipe(sass.sync().on('error', sass.logError))
+	return sass("sass/application.scss", { style: "expanded" })
     .pipe(prefix(['last 2 version']))
     .pipe(gulp.dest("public/stylesheets"))
     .pipe(rename({suffix: '.min'}))
@@ -27,4 +26,8 @@ gulp.task('process-scripts', function(){
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
     .pipe(gulp.dest('public/javascripts'))
+})
+
+gulp.task('watch', function(e){
+  gulp.watch('sass/application.scss', ['process-styles'])
 })
