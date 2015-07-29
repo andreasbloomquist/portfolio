@@ -1,6 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald);
 @import url(https://fonts.googleapis.com/css?family=Quattrocento);
 @import url(https://fonts.googleapis.com/css?family=PT+Sans);
+.color {
+  color: #F33E1B;
+}
+
 #title {
   border: 1px solid #fff;
   margin-top: 7rem;
@@ -19,9 +23,6 @@
   text-align: center;
   font-size: 2rem;
   padding: 1rem;
-}
-#title .color {
-  color: #F33E1B;
 }
 #title .green {
   color: #80bd01;
@@ -211,24 +212,23 @@ div.skills-icons h2.skills {
 }
 
 #about {
-  height: 100%;
+  height: 120%;
   background-color: #0A0A0A;
 }
-
-#about-text .row {
-  padding: 5rem;
-}
-#about-text img {
+#about img {
   display: block;
-  height: 80vh;
   margin: 0 auto;
 }
-#about-text h2 {
+#about #about-text {
+  background-color: white;
+  height: 55vh;
+}
+#about #about-text h2 {
+  padding-top: 2rem;
   color: black;
   text-align: center;
-  padding-top: 2rem;
 }
-#about-text p {
+#about #about-text p {
   color: black;
   text-align: center;
   font-family: "PT Sans", sans-serif;
