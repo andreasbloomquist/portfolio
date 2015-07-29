@@ -284,4 +284,31 @@ i.contact:hover {
   h1#title {
     font-size: 5rem;
   }
+
+  #skills {
+    height: 200%;
+  }
+
+  #center-container, #left-container, #right-container {
+    margin: auto;
+    margin-top: 1rem;
+  }
+
+  #projects {
+    height: 170%;
+  }
+
+  #about #about-text {
+    height: 93vh;
+  }
+
+  #contact {
+    height: 95%;
+    background-position-y: 0rem;
+    background-position-x: -15rem;
+  }
+
+  ul.off-canvas-list div {
+    height: 5vh;
+  }
 }
