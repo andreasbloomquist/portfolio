@@ -168,7 +168,7 @@ div.skills-icons h2.skills {
 
 #projects {
   height: 100%;
-  background-color: grey;
+  background-color: #D2D2CF;
 }
 #projects h2 {
   padding-top: 5rem;
@@ -220,7 +220,7 @@ div.skills-icons h2.skills {
   margin: 0 auto;
 }
 #about #about-text {
-  background-color: white;
+  background-color: #EDEEE3;
   height: 55vh;
 }
 #about #about-text h2 {
